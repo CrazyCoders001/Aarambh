@@ -43,5 +43,43 @@ int main(){
     int rem = num1 % num2;
     cout<<"The reminder is = "<<rem<<endl;
 
+    cout<<"-----------------------------------------------------------"<<endl;
+    // ++ Increment
+    // post increment      = varName++
+    // pre increment       = ++varName
+    
+    int intValue = 10;
+    // intvalue++         = intValue = intValue+1
+    int incrementedValue = intValue++;                   // intValue = intValue + 1
+    cout<<"intValue "<<intValue<<endl;                   //11
+    cout<<"incrementedValue "<<incrementedValue<<endl;   //10
+
+    //post increment
+    // int incrementedValue = intValue++;
+    // pehle initialization ho raha hai, and after that increment will happen
+
+    int preIncrement = ++intValue;                    
+    cout<<"preIncrement "<<preIncrement<<endl;           //12
+    cout<<"intValue "<<intValue<<endl;                   //12
+
+    // pre increment
+    //  int preIncrement = ++intValue; 
+    // pehle increment ho raha hai, and after that it will gets assigned 
+
+
+    cout<<"-----------------------------Decrement------------------------------"<<endl;
+    //decrement
+
+    //post decrement
+    int intValue_2 = 10;
+    int postDecrement = intValue_2--;
+    cout<<"intValue_2 "<<intValue_2<<endl;                   // 9
+    cout<<"postDecrement "<<postDecrement<<endl;             // 10
+
+    //pre decrement
+    int preDecrement = --intValue_2;
+    cout<<"intValue_2 "<<intValue_2<<endl;                   // 8
+    cout<<"preDecrement "<<preDecrement<<endl;               // 8
+
     return 0;
 }
