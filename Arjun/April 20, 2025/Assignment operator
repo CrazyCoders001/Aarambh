@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    //Assignment Operators: These operators used to assign values to the variable...
+    /*Types of assignment operators:
+    =, +=, -=, *=, /=, %=
+    */
+    
+    //= 
+    int num = 100;
+    int assignValue = num;
+    cout<<"Assigned value is : "<<assignValue<<endl;
+    
+    // +=
+    int addValue = 15;
+    addValue += 15;
+    cout<<"Added value is : "<<addValue<<endl;
+    
+    // -=
+    int subValue = 15;
+    subValue -= 8;
+    cout<<"Subtracted value is : "<<subValue<<endl;
+    
+    // *=
+    int mulValue = 22;
+    mulValue *= 6;
+    cout<<"Multiplied value is : "<<mulValue<<endl;
+    
+    // /=
+    int divValue = 22;
+    divValue /= 4;
+    cout<<"Divided value is : "<<divValue<<endl;
+    
+    // %=
+    int modValue = 22;
+    modValue %= 4;
+    cout<<"Remainder is : "<<modValue<<endl;
+    
+    return 0;
+}
