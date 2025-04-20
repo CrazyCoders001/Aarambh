@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    //Operators: Operators are use to perform specific mathematical or logical calculations on given values...
+    /* Arithmetic operator:
+    + = Add
+    - = Sub
+    * = Mul
+    / = Div
+    % = Mod (Used to find remainder)
+    ++ = Increment
+    -- = Decrement
+    
+    */
+
+    cout<<"-----------Addition-------------"<<endl;
+    int a = 10, b = 50;
+    int sum = a + b;
+    cout<<"Addition is : "<<sum<<endl;
+    
+    cout<<"-----------Subtraction-------------"<<endl;
+    int A = 150, B = 75;
+    int Sum = A - B;
+    cout<<"Subtraction is : "<<Sum<<endl;
+    
+    cout<<"-----------Multiplication-------------"<<endl;
+    int mul1 = 12, mul2 = 8;
+    int MUL = mul1 * mul2;
+    cout<<"Multiply is : "<<MUL<<endl;
+    
+    cout<<"-----------Division-------------"<<endl;
+    int x = 10, y = 2;
+    int DIV = x / y;
+    cout<<"Division is : "<<DIV<<endl;
+    
+    cout<<"-----------Modulous-------------"<<endl;
+    int X = 2, Y = 10;
+    int MOD = X % Y;
+    cout<<"Remainder is : "<<MOD<<endl;
+    
+    cout<<"-----------Increment-------------"<<endl;
+    //Pre Increment (++value)
+    //Post Increment (value++)
+    
+    int val1 = 10, val2 = 20;
+    int preIncrement = ++val1;
+    cout<<"PreIncrement is : "<<preIncrement<<endl;
+    int postIncrement = val2++;
+    cout<<"postIncrement is : "<<postIncrement<<endl;
+    
+    cout<<"-----------Decrement-------------"<<endl;
+    //Pre Decrement (--value)
+    //Post Decrement (value--)
+    
+    int p = 5, q = 10;
+    int preDecrement = --p;
+    cout<<"preDecrement is : "<<preDecrement<<endl;
+    int postDecrement = q--;
+    cout<<"postDecrement is : "<<postDecrement<<endl;
+  
+    return 0;
+}
