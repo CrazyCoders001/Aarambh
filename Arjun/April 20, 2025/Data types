@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Data Types in C++
+    //What is DataType?
+    //DataTypes specifies the type of data that can be stored in variable...
+    
+    /*List of DataTypes
+        int, float, double, char, string, boolean
+        These all the basic datatypes...
+    */
+    
+    //Int: It stores only integer numbers or value in it...
+    int a = 10;
+    cout<<"Int : "<< a <<endl;
+    
+    //Float: Floating point data type is used to store decimal value or numbers in it. It can store maximum 5-7 numbers after decimal...
+    float x = 12.1234;
+    cout<<"Float : "<< x <<endl;
+    
+    // Double: It is also just like Floating point datatype but it can store more than 5-7 numbers after deciaml...
+    double Dou1 = 20.6543217895;
+    cout<<"Double : "<< Dou1 <<endl;
+    
+    //Char: Char datatype is used to store single variable in it...
+    char A = 'A';
+    cout<<"Char : "<< A <<endl;
+    
+    //String: String is a collection of character datatype., we can say it stores values in series of alphabets...
+    string name = "Arjun";
+    cout<<"String : "<< name <<endl;
+    
+    //Boolean: It is used to stores values in the form of True (1) or False(0)
+    bool value1 = "True";
+    bool value2 = "False";
+    cout<<"Boolean : "<< value1 <<endl;
+    cout<<"Boolean : "<< value2 <<endl;
+
+    return 0;
+}
