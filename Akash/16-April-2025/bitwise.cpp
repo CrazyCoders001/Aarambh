@@ -72,9 +72,74 @@ int main(){
     */
    cout<<"bitwise not is :- "<<~input<<endl;
 
+   cout<<"-------------------------Bitwise XOR------------------"<<endl;
     // Bitwise XOR ^
+    // which works on two operands
+    // for performing xor operation we use symbol/operator '^'
+    // Property of xor is
+    //     - The result will be 1/true for the dissimilar operands
+    //     - The result will be 0/false  for the similar operands
+
+    /*
+        opOne ^ opTwo    result of XOR
+        1        1            0
+        1        0            1
+        0        1            1          
+        0        0            0
+    */
+
+   int opOne = 5, opTwo = 3;
+
+   /* 
+            5          -->  0 1 0 1
+                           ^
+            3          -->  0 0 1 1
+                          -------------------
+                            0 1 1 0                 -->    6
+   */                         
+   int result = opOne^opTwo;
+   cout<<"The xor result of (5 ^ 3) is :- "<<result<<endl;
+
+    cout<<"-------------------------Bitwise left shift------------------"<<endl;
     // left shift  <<
-    // right shift >>
+    // This operator works in manner
+    // int res = input << numberOfplacesToShift;
+    //         = input * pow(2, numberOfplacesToShift)
+    //         = 5     * pow(2, 1)
+    //         = 5 * 2
+    //         = 10
+    
+    int num = 5;
+    int res = 5 << 1;
+    cout<<"Left shift of (5 << 1) :- "<<res<<endl;
+
+    /*                  4th    3rd 2nd 1st 0th  (2^n)
+          5    -->               ,0, 1, 0, 1,
+
+          5 << 1       --->  0, 1, 0, 1, 0 
+                             0 +  8 + 0 + 2 + 0 ---> 10    
+    */
+
+
+    cout<<"-------------------------Bitwise right shift------------------"<<endl;
+    // right shift  >> 
+    // This operator works in manner
+    // int res = input >> numberOfplacesToShift;
+    /*
+               = input / pow(2, numberOfplacesToShift)
+               = 12 / pow(2, 2)
+               = 12 / 4
+               = 3
+    */
+
+    num = 12;
+    res = num >> 2;
+    cout<<"right shift of (12 >> 2) :- "<<res<<endl;
+    /*
+            12            --> 0 0 0 0 1 1 0 0 
+            12 >> 2       -->     0 0 0 0 1 1         (0 0 will get dumped)
+                          -->  decimal answer 3
+    */
 
     return 0;
 }
