@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+#include<string>
+#include<iostream>
+using namespace std;
+int main(){
+    string str1="shilpa";
+    string str2="kanni";
+    cout<<"frist string:-"<<str1<<endl;
+    cout<<"second string:-"<<str2<<endl;
+    cout<<"------------***----------"<<endl;
+    cout<<"finding length of str1:-"<<str1.length()<<endl;
+    cout<<"------------***------------"<<endl;
+    int start_index=0;
+    int end_index=str2.length()-1;
+    cout<<"show the frist char in:-"<<str2[start_index]<<endl;
+    cout<<"show the last char in:-"<<str2[end_index]<<endl;
+    cout<<"------------string concat------------"<<endl;
+    string str3=str1+str2;
+    cout<<"concatination of string:-"<<str3<<endl;
+    cout<<"concatination of string:-"<<str1.append(str2)<<endl;
+    string str4="priya";
+    char b='b';
+    str4.push_back(b);
+    cout<<"add a letter:-"<<str4<<endl;
+    
+    
+
+
+
+
+
+
+}
