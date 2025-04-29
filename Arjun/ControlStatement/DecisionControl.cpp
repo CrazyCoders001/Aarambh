@@ -37,6 +37,61 @@ int main(){
     else {
         cout<<"Number is zero"<<endl;
     }
+
+    cout<<"---------------Example 3----------------"<<endl;
+    //Write a program that prints whether it is even or odd.
+    int num1 =10;
     
+    if(num1%2==0) {
+        cout<<"Number is Even."<<endl;
+    }
+    
+    else {
+        cout<<"Number is Odd."<<endl;
+    }
+    
+    cout<<"---------------Example 4----------------"<<endl;
+    //Write a program to check whether the year is leap year or not?
+    int year = 1892;
+    
+    if(year%4==0)
+    {
+        cout<<"Entered year is leap year."<<endl;
+    }
+    
+    else
+    {
+        cout<<"Entered year is not a leap year."<<endl;
+    }
+    
+    cout<<"---------------Example 5----------------"<<endl;
+    //Write a program to find the greater of two numbers.
+    
+    int a = 556;
+    int b = 256;
+    
+    if(a>b) {
+        cout<<"A is greater than B."<<endl;
+    }
+    
+    else {
+        cout<<"B is greater than A."<<endl;
+    }
+    
+    /*cout<<"---------------Example 6----------------"<<endl;
+    //determine whether it is a vowel or consonant...
+    
+    char Alphabet = 'q';
+    
+    if(Alphabet =='a' || Alphabet =='e' || Alphabet =='i' || Alphabet =='o' || Alphabet =='u')
+    {
+        cout<<"Entered Alphabet is Vowel."<<endl;
+    }
+    
+    else
+    {
+        cout<<"Entered Alphabet is Consonant."<<endl;
+    }
+    */
     return 0;
 }
