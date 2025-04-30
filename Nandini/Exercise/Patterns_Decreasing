@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    
+    cout<<"--------------Decreasing Triangle(Using for loop)---------------"<<endl;
+    
+    int I, J;
+    
+    for(I=5; I >= 1; I--)    {
+        for(J=1; J <= I; J++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    cout<<endl;
+    
+    cout<<"--------------Decreasing Triangle(Using While loop)---------------"<<endl;
+    
+    int a, b;
+    
+    a = 5;
+    while(a >= 1) {
+        b = 1;
+        while(b <= a) {
+            cout<<"*";
+            b++;
+        
+        }
+        cout<<endl;
+        a--;
+        
+    }
+    
+}
