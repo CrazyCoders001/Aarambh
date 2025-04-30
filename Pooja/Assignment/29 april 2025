@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main()
+    {
+	float a,b,add,sub,mul,divi;
+	int ch;
+        cout<<"Arithmetic operations"<<endl;
+        cout<<"1- Addition"<<endl;
+        cout<<"2- Subtraction"<<endl;
+        cout<<"3- Multiplication"<<endl;
+        cout<<"4- Division"<<endl;
+        cout<<"Enter your Choice"<<endl;
+        cin>>ch;
+	    cout<<"Enter the 1st number"<<endl;
+        cin>>a;
+        cout<<"enter the 2nd number"<<endl;
+        cin>>b;
+        switch (ch)
+        {
+            case 1:
+                add=a+b;
+                cout<<"Addition= "<<add<<endl;
+                break;
+            case 2:
+                sub=a-b;
+                cout<<"Subtraction= "<<sub<<endl;
+                break;
+            case 3:
+                mul=a*b;
+                cout<<"Multiplication= "<<mul<<endl;
+                break;
+            case 4:
+                divi=a/b;
+                cout<<"Division= "<<divi<<endl;
+                break;
+            default:
+                cout<<"Invalid Choice";
+        }
+}
