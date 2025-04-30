@@ -1,0 +1,56 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    cout<<"---------------Switch case loop----------------"<<endl;
+    //Take a Input from user and perform the operations which user want...
+    
+    bool cond = true;
+    do{
+
+    int num1, num2;
+    cout<<"Enter the first number :- ";
+    cin>>num1;
+    cout<<"Enter the second number :- ";
+    cin>>num2;
+
+    
+    cout<<"Select the choice which operation you want to perform(If you choice or press any other option you will get EXIT) :"<<endl;
+    cout<<"1. Addition"<<endl;
+    cout<<"2. Substraction"<<endl;
+    cout<<"3. Multiplication"<<endl;
+    cout<<"4. Division"<<endl;
+    
+    cout<<"Enter your choice here : ";
+    
+    int sum;
+    cin>>sum;
+    
+    switch(sum) {
+        case 1:
+            cout<<"Addition will be :- "<<num1+num2<<endl;
+            break;
+            
+        case 2:
+            cout<<"Substraction will be :- "<<num1-num2<<endl;
+            break;
+            
+        case 3:
+            cout<<"Multiplication will be :- "<<num1*num2<<endl;
+            break;
+            
+        case 4:
+            cout<<"Division will be :- "<<num1/num2<<endl;
+            break;
+            
+        default:
+            cout<<"You entered wrong choice..."<<endl;
+            cout<<"EXIT"<<endl;
+            cond = false;
+            
+    }
+    cout<<"----------------Finish-----------------"<<endl;
+    }while(cond);
+    
+
+}
