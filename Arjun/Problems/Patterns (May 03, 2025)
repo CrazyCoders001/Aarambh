@@ -1,0 +1,142 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    
+    cout<<"1.------Right half pyramid---------"<<endl;
+    
+    int rows = 5;
+    
+    for(int i=1; i <= rows; i++) {
+        for(int j=1; j <= i; j++) {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    cout<<"2.------Reverse Right half pyramid---------"<<endl;
+    
+    //int rows1 = 5;
+    
+    for(int i=5; i >= 1; i--) {
+        for(int j=1; j <= i; j++) {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    cout<<"3.--------Reverse Left half pyramid---------"<<endl;
+    
+    /*
+        rows =5;
+        
+        * * * * *       i=1     spaces = 0      no of stars = 5
+        s * * * *       i=2     spaces = 1      no of stars = 4
+        s s * * *       i=3     spaces = 2      no of stars = 3
+        s s s * *       i=4     spaces = 3      no of stars = 2
+        s s s s *       i=5     spaces = 4      no of stars = 1
+    */
+    
+    rows = 5;
+    
+    for(int i=1; i <= rows; i++)        //i is declaring spaces
+    {
+        for(int j=rows-i; j <= rows; j++)   //j for printing spaces
+        {
+            cout<<" ";
+        }
+        for(int k=i; k <= rows; k++)       //k for declaring stars
+        {
+            cout<<"*";           
+        }
+            cout<<endl;
+        //cout<<endl;
+    }
+    
+    cout<<"4.--------Left half pyramid---------"<<endl;
+    
+    /*
+        rows =5;
+        
+        s s s s *       i=1     spaces = 4      no of stars = 1
+        s s s * *       i=2     spaces = 3      no of stars = 2
+        s s * * *       i=3     spaces = 2      no of stars = 3
+        s * * * *       i=4     spaces = 1      no of stars = 4
+        * * * * *       i=5     spaces = 0      no of stars = 5
+    */
+    
+    rows = 6;
+    
+    for(int i=1; i <= rows; i++)    //for rows
+    {
+        for(int j=1; j <= rows-i; j++)      //for spaces
+        {
+            cout<<" ";
+        }
+        for(int k=1; k <= i; k++)       //for stars
+        // (k<=i) means print i stars on i rows which is row 1 = 1 star in such a way...
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    cout<<"5.--------Square fill pattern---------"<<endl;
+    
+    /*
+        * * * * *
+        * * * * * 
+        * * * * * 
+        * * * * *
+    */
+    
+    rows = 5;
+    
+    for(int i=1; i <= 5; i++) {
+        for(int j=1; j <= 5; j++) {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+    cout<<"6.--------Square hallow pattern---------"<<endl;
+    
+    //Taken a reference from google... But clearly understand the logic and performed by myself...
+    
+    /*
+        rows = 6;
+        
+        * * * * * *     i=1     spaces=0    stars = 6
+        * s s s s *     i=2     spaces=4    stars = 2
+        * s s s s *     i=3     spaces=4    stars = 2
+        * s s s s *     i=4     spaces=4    stars = 2
+        * s s s s *     i=5     spaces=4    stars = 2
+        * * * * * *     i=6     spaces=0    stars = 6
+        
+    */
+    
+    rows = 6;
+    int cols = 6;
+    
+    for(int i=1; i <= rows; i++)    //i for rows
+    {
+        for(int j=1; j <= cols; j++)   //j for columns
+        {
+            if (i==1 || i==rows || j==1 ||j==cols)
+            {
+                cout<<"*";
+            }
+            else 
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+    
+    
+
+    
+    
+    
+}
