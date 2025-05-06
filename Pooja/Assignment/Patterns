@@ -1,0 +1,120 @@
+#include<iostream>
+using namespace std;
+int main()
+{   
+    
+    cout<<"------Hill pattern----------"<<endl;
+    /*
+             *
+           * * * 
+         * * * * *
+       * * * * * * *
+     * * * * * * * * *
+     */
+      int row=5;
+      for(int i=1;i<=5;i++)
+      {
+                for(int j=1;j<=row-i;j++)
+                {
+                    cout<<"   ";
+                }
+                for(int j=1;j<=2*i-1;j++)
+                {
+                    cout<<" * ";
+                }
+                cout<<endl;
+      }
+
+    cout<<"------Right half pyramid pattern----------"<<endl;
+    
+    /*
+        * 
+        * *
+        * * *
+        * * * *
+        * * * * *
+    */
+
+	int i,j;
+        for(i=0;i<=4;i++)
+        {
+            for(j=0;j<=i;j++)
+            {
+                cout<<" * ";
+            }
+            cout<<endl;
+        }
+
+    cout<<"------Reverse Right half pyramid pattern----------"<<endl;
+    
+    /*
+
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+    */
+
+ 	//int i,j;
+        for(i=4;i>=0;i--)
+        {
+            for(j=0;j<=i;j++)
+            {
+                cout<<" * ";
+            }
+            cout<<endl;
+        }
+
+    cout<<"------Rhombus pattern----------"<<endl;
+    
+        /*
+    
+		                    *  *  *  *  *  *  *  *  *  *  
+                        *  *  *  *  *  *  *  *  *  *  
+                     *  *  *  *  *  *  *  *  *  *  
+                   *  *  *  *  *  *  *  *  *  *  
+               *  *  *  *  *  *  *  *  *  *  
+        */
+       
+        row=1;
+        for(int i=5;i>=row-i;i--)
+        {
+            for(int j=5;j>=row-i;j--)
+            {
+                cout<<"   ";
+            }
+            for(int j=10;j>=(2*row)-1;j--)
+            {
+                cout<<" * ";
+            }
+            cout<<endl;
+        }
+
+
+    cout<<"------Reverse hill pattern----------"<<endl;
+
+    /*
+
+    *  *  *  *  *  *  *  *  * 
+       *  *  *  *  *  *  * 
+          *  *  *  *  * 
+            *  *  * 
+               * 
+    */
+
+        row=5;
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                cout<<"   ";
+            }
+            for(int j=0;j< 2*(row-i)-1;j++)
+            {
+                cout<<" * ";
+            }
+            cout<<endl;
+        }
+}
+
